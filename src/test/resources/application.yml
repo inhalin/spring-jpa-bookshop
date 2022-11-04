@@ -1,0 +1,22 @@
+# 스프링부트는 설정정보가 없으면 기본적으로 인메모리 디비를 사용한다.
+
+#spring:
+#  datasource:
+#    url: jdbc:h2:tcp://localhost/~/springjpa
+#    username: root
+#    password:
+#    driver-class-name: org.h2.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernate:
+#        # show_sql: true
+#        format_sql: true
+#  h2:
+#    console:
+#      enabled: true
+
+logging.level:
+  org.hibernate.SQL: debug
+  org.hibernate.type: trace
